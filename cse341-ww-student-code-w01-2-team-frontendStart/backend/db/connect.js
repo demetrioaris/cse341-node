@@ -10,24 +10,19 @@ const initDb = (callback) => {
         return callback(null, _db);
     }
 
-    MongoClient.connect(process.env.MONGODB_URI, {
-        useNewUrlParser: true,
-        useUnifiedTopology: true,
-    })
+    MongoClient.connect(process.env.MONGODB_URI)
         .then((client) => {
             _db = client;
-            console.log("Connected to MongoDB");
             callback(null, _db);
         })
         .catch((err) => {
-            console.error("Error connecting to MongoDB:", err);
             callback(err);
         });
 };
 
 const getDb = () => {
     if (!_db) {
-        throw new Error("Database not initialized");
+        throw Error("Database not initialized");
     }
     return _db;
 };

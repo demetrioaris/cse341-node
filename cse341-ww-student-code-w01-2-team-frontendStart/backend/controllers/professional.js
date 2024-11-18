@@ -1,20 +1,12 @@
 const mongodb = require("../db/connect");
 
 const getData = async (req, res, next) => {
-    try {
-        // Fetch the data from MongoDB
-        const result = await mongodb
-            .getDb()
-            .db()
-            .collection("user")
-            .find()
-            .toArray();
-        // Send the first object in the collection
+    const result = await mongodb.getDb().db().collection("user").find();
+    result.toArray().then((lists) => {
         res.setHeader("Content-Type", "application/json");
-        res.status(200).json(result[0]);
-    } catch (err) {
-        res.status(500).json({ error: "Failed to fetch data" });
-    }
+        res.status(200).json(lists[0]);
+        console.log("Hello Saturno"); // we just need the first one (the only one)
+    });
 };
 
 module.exports = { getData };
