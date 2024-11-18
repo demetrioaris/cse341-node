@@ -1,0 +1,27 @@
+[
+    {
+        "_id": {
+            "$oid": "621fe1f527d68ebb24438395"
+        },
+        "professionalName": "Demetrio Aris",
+        "nameLink": {
+            "firstName": "Demetrio",
+            "url": "https://demetrioaris.github.io/wdd131/project/index.html"
+        },
+        "base64Image": "/iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgwnLpRPAAA...",
+        "firstName": "Demetrio",
+        "primaryDescription": "Software Developer specializing in web technologies and data visualization.",
+        "workDescription1": "Extensive experience in customer service and banking sector operations.",
+        "workDescription2": "Proficient in developing responsive websites and data-driven applications using HTML, CSS, JavaScript, and Python.",
+        "linkTitleText": "check out ",
+        "linkedInLink": {
+            "link": "https://www.linkedin.com/in/d-aris/",
+            "text": "LinkedIn"
+        },
+        "githubLink": {
+            "link": "https://github.com/demetrioaris",
+            "text": "GitHub"
+        },
+        "contactText": "Feel free to contact"
+    }
+]
